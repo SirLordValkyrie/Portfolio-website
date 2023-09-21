@@ -3,23 +3,26 @@
 <head>
     <title>Game Developer Portfolio</title>
     <style>
-        /* Reset some default styles for better control */
-        body, h1, h2, p, ul, li {
+        /* Reset some default styles for a clean slate */
+        body, h1, p {
             margin: 0;
             padding: 0;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
+            background-color: #222;
             color: #fff;
+            font-family: 'Arial', sans-serif;
         }
 
         header {
             background-color: #333;
-            color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
         }
 
         nav {
@@ -28,37 +31,36 @@
             padding: 10px;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
         }
 
-        nav li {
-            display: inline;
-            margin-right: 20px;
+        nav a:hover {
+            text-decoration: underline;
         }
 
         main {
             padding: 20px;
         }
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
+        .portfolio-item {
+            border: 1px solid #555;
+            padding: 20px;
+            margin: 20px;
+            background-color: #333;
+            border-radius: 10px;
         }
 
-        h2 {
+        .portfolio-item h2 {
             font-size: 24px;
             margin-bottom: 10px;
         }
 
-        p {
+        .portfolio-item p {
             font-size: 16px;
-            line-height: 1.5;
-        }
-
-        .portfolio-item {
-            margin-bottom: 40px;
         }
 
         footer {
@@ -72,31 +74,25 @@
 <body>
     <header>
         <h1>Game Developer Portfolio</h1>
-        <p>Welcome to my world of gaming!</p>
     </header>
     
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
     </nav>
     
     <main>
-        <section class="portfolio-item">
+        <div class="portfolio-item">
             <h2>Game Title 1</h2>
-            <p>A brief description of the first game you developed.</p>
-        </section>
-
-        <section class="portfolio-item">
+            <p>A brief description of your first game project.</p>
+        </div>
+        
+        <div class="portfolio-item">
             <h2>Game Title 2</h2>
-            <p>A brief description of the second game you developed.</p>
-        </section>
-
-        <!-- Add more portfolio items as needed -->
-
+            <p>A brief description of your second game project.</p>
+        </div>
     </main>
     
     <footer>
